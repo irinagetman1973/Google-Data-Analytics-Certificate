@@ -5,7 +5,7 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
 
 ## Dataset
 - **Source:** [Lettuce Growth Days Dataset on Kaggle](https://www.kaggle.com/datasets/jjayfabor/lettuce-growth-days)
-- **File:** [lettuce_dataset.xlsx](../../datasets/lettuce_dataset.xlsx)
+- **File:** [lettuce_dataset.xlsx](datasets/lettuce_dataset_updated.csv)
 
 
 ## Tasks
