@@ -16,6 +16,8 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
    - The original date column contained dates in inconsistent formats.
    - A formula was applied to normalize all dates to the `MM/DD/YYYY` format.
    - The normalized dates were copied back to the original date column to maintain consistency.
+2. - **Temperature Consistency Check**:
+   -  Verified if the Celsius and Fahrenheit temperatures match. The formula used: `=IF(ROUND((C2*9/5+32),2)=ROUND(H2,2), "Match", "Check")`.
 
 - Exploratory Data Analysis (EDA)
 - Statistical Analysis
