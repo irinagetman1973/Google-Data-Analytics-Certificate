@@ -11,7 +11,12 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
 
 
 ## Tasks
-- Data Cleaning
+### Data Cleaning Process
+1. **Date Normalization**:
+   - The original date column contained dates in inconsistent formats.
+   - A formula was applied to normalize all dates to the `MM/DD/YYYY` format.
+   - The normalized dates were copied back to the original date column to maintain consistency.
+
 - Exploratory Data Analysis (EDA)
 - Statistical Analysis
 - Data Visualization
