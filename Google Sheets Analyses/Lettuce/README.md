@@ -19,9 +19,25 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
 2. **Temperature Consistency Check**:
    -  Verified if the Celsius and Fahrenheit temperatures match. The formula used: `=IF(ROUND((C2*9/5+32),2)=ROUND(H2,2), "Match", "Check")`.
 
-- Exploratory Data Analysis (EDA)
-- Statistical Analysis
-- Data Visualization
+### Exploratory Data Analysis (EDA)
+
+- Summary statistics were calculated for each variable.
+- Visualizations were created to understand the distributions and relationships between variables.
+
+### Feature Engineering
+
+- New features were created to enhance the dataset, such as `Average Growth` and `Growth Change`.
+
+### Statistical Analysis
+
+- Correlation analysis was conducted to identify relationships between variables.
+- Hypothesis testing was performed to validate assumptions about the data.
+
+### Visualization and Reporting
+
+- Interactive dashboards were created to present key insights.
+- A final report summarizing the analysis, findings, and recommendations was prepared.
+
 
 ## Analysis Files
 - **Data Cleaning:** [lettuce_data_cleaning.xlsx](lettuce_data_cleaning.xlsx)
