@@ -1,6 +1,6 @@
 # Lettuce Growth Data Analysis
 
-![Lettuce](images/dataset-cover.jpg)
+![Lettuce](../images/dataset-cover.jpg)
 
 ## Objective
 Analyze the factors affecting lettuce growth and provide insights for optimizing growth conditions.
