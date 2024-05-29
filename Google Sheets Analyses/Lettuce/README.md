@@ -49,23 +49,38 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
     - **Column Added**: `Avg TDS Value`
     - **Formula**: `=IFERROR(AVERAGEIFS($E$2:$E$3170, $A$2:$A$3170, A2), "N/A")`
     - `Avg TDS Value` provides the average nutrient concentration for each plant during its growth period.
+3. **Normalized pH Level**:
+    - **Column Added**: `Normalized pH`
+    - **Formula**: `=(F2 - MIN(F:F)) / (MAX(F:F) - MIN(F:F))`
+    - This formula normalizes the pH level to a 0-1 scale.
+
+4. **Average pH Level**:
+    - **Column Added**: `Avg pH`
+    - **Formula**: `=AVERAGEIFS($F$2:$F$3170, $A$2:$A$3170, A2)`
+    - This formula calculates the average pH level for each plant.
+
+5. **Average Temperature**:
+    - **Column Added**: `Avg Temperature`
+    - **Formula**: `=AVERAGEIFS($C$2:$C$3170, $A$2:$A$3170, A2)`
+    - This formula calculates the average temperature for each plant over the growth period.
+
+6. **Temperature Range**:
+    - **Column Added**: `Temp Range`
+    - **Formula**: `=MAXIFS($C$2:$C$3170, $A$2:$A$3170, A2) - MINIFS($C$2:$C$3170, $A$2:$A$3170, A2)`
+    - This formula calculates the difference between the maximum and minimum temperatures recorded for each plant.
 
 
 
-To understand the dataset better, we also calculated the number of unique plant IDs:
-
-- **Unique Plant IDs**:
-    - **Formula**: `=COUNTA(UNIQUE(A2:A3170))`
-    - This formula counts the number of unique plant IDs present in the dataset.
 
 ### Example of Added Columns
 
-| Plant_ID | Date       | Temperature (°C) | Humidity (%) | TDS Value (ppm) | pH Level | Growth Days | Max Growth Days | Avg TDS Value |
-|----------|------------|------------------|--------------|-----------------|----------|-------------|-----------------|---------------|
-| 1        | 09/01/2023 | 30.2             | 65           | 650             | 6.5      | 45          | 48              | 663           |
-| 1        | 09/02/2023 | 30.3             | 66           | 660             | 6.4      | 46          | 48              | 663           |
-| 2        | 09/01/2023 | 30.1             | 64           | 670             | 6.3      | 45          | 47              | 680           |
-| 2        | 09/02/2023 | 30.2             | 65           | 675             | 6.4      | 46          | 47              | 680           |
+| Plant_ID | Date       | Temperature (°C) | Humidity (%) | TDS Value (ppm) | pH Level | Growth Days | Max Growth Days | Avg TDS Value | Growth Rate | Normalized pH | Avg pH | Avg Temperature | Temp Range |
+|----------|------------|------------------|--------------|-----------------|----------|-------------|-----------------|---------------|-------------|---------------|--------|-----------------|-------------|
+| 1        | 09/01/2023 | 30.2             | 65           | 650             | 6.5      | 45          | 48              | 663           | 0.94        | 0.81          | 6.4    | 30.25           | 1.8         |
+| 1        | 09/02/2023 | 30.3             | 66           | 660             | 6.4      | 46          | 48              | 663           | 0.96        | 0.79          | 6.4    | 30.25           | 1.8         |
+| 2        | 09/01/2023 | 30.1             | 64           | 670             | 6.3      | 45          | 47              | 680           | 0.96        | 0.76          | 6.35   | 30.15           | 2.1         |
+| 2        | 09/02/2023 | 30.2             | 65           | 675             | 6.4      | 46          | 47              | 680           | 0.98        | 0.79          | 6.35   | 30.15           | 2.1         |
+
 
 
 
