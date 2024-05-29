@@ -36,7 +36,38 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
 
 ### Feature Engineering
 
-- New features were created to enhance the dataset, such as `Average Growth` and `Growth Change`.
+
+
+1. **Max Growth Days**:
+    - **Column Added**: `Max Growth Days`
+    - **Formula**: `=MAXIFS($D$2:$D$3170, $A$2:$A$3170, A2)`
+    - `Max Growth Days` captures the longest period each plant has grown.
+
+2. **Average TDS Value**:
+    - **Column Added**: `Avg TDS Value`
+    - **Formula**: `=IFERROR(AVERAGEIFS($E$2:$E$3170, $A$2:$A$3170, A2), "N/A")`
+    - `Avg TDS Value` provides the average nutrient concentration for each plant during its growth period.
+
+
+
+To understand the dataset better, we also calculated the number of unique plant IDs:
+
+- **Unique Plant IDs**:
+    - **Formula**: `=COUNTA(UNIQUE(A2:A3170))`
+    - This formula counts the number of unique plant IDs present in the dataset.
+
+### Example of Added Columns
+
+| Plant_ID | Date       | Temperature (°C) | Humidity (%) | TDS Value (ppm) | pH Level | Growth Days | Max Growth Days | Avg TDS Value |
+|----------|------------|------------------|--------------|-----------------|----------|-------------|-----------------|---------------|
+| 1        | 09/01/2023 | 30.2             | 65           | 650             | 6.5      | 45          | 48              | 663           |
+| 1        | 09/02/2023 | 30.3             | 66           | 660             | 6.4      | 46          | 48              | 663           |
+| 2        | 09/01/2023 | 30.1             | 64           | 670             | 6.3      | 45          | 47              | 680           |
+| 2        | 09/02/2023 | 30.2             | 65           | 675             | 6.4      | 46          | 47              | 680           |
+
+
+
+
 
 ### Statistical Analysis
 
