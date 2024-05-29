@@ -25,9 +25,9 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
   - Mean Temperature: `=AVERAGE('lettuce_dataset_cleaned.csv'!C2:C)`
   - Median Humidity: `=MEDIAN('lettuce_dataset_cleaned.csv'!E2:E)`
   - Min/Max pH Level: `=MIN('lettuce_dataset_cleaned.csv'!F2:F)` / `=MAX('lettuce_dataset_cleaned.csv'!F2:F)`
-  - Standard Deviation Temp: =STDEV(lettuce_dataset_cleaned.csv!C2:C)
-  - Variance Humidity: =VAR('lettuce_dataset_cleaned.csv'!D2:D)
-  - Corr (Temp, Growth Days):	 =CORREL('lettuce_dataset_cleaned.csv'!C2:C, 'lettuce_dataset_cleaned.csv'!G2:G)
+  - Standard Deviation Temp: `=STDEV(lettuce_dataset_cleaned.csv!C2:C)`
+  - Variance Humidity: `=VAR('lettuce_dataset_cleaned.csv'!D2:D)`
+  - Corr (Temp, Growth Days):	 `=CORREL('lettuce_dataset_cleaned.csv'!C2:C, 'lettuce_dataset_cleaned.csv'!G2:G)`
 - **Visualizations**:
   - Scatter Plot of Growth Days vs Temperature (°C)
     - ![Scatter Plot](images/scatter_plot_growth_days_temperature.png)
