@@ -32,7 +32,7 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
   - Scatter Plot of Growth Days vs Temperature (°C)
     - ![Scatter Plot](../../images/Growth%20Days%20vs%20Temperature%20(°C).png)
   - Histogram of Humidity (%)
-    - ![Histogram Plot](../../images/Histogram%20of%20Humidity%20(%25).png
+    - ![Histogram Plot](../../images/Histogram%20of%20Humidity%20(%25).png)
 
 ### Feature Engineering
 
