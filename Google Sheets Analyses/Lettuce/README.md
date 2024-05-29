@@ -29,9 +29,11 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
   - Variance Humidity: `=VAR('lettuce_dataset_cleaned.csv'!D2:D)`
   - Corr (Temp, Growth Days):	 `=CORREL('lettuce_dataset_cleaned.csv'!C2:C, 'lettuce_dataset_cleaned.csv'!G2:G)`
 - **Visualizations**:
-  - Scatter Plot of Growth Days vs Temperature (°C)
+   - Scatter Plot of Growth Days vs Temperature (°C)
+  
    ![Scatter Plot](../../images/Growth%20Days%20vs%20Temperature%20(°C).png)
   - Histogram of Humidity (%)
+    
   ![Histogram Plot](../../images/Histogram%20of%20Humidity%20(%25).png)
 
 ### Feature Engineering
