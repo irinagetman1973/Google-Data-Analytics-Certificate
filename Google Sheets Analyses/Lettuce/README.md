@@ -69,6 +69,10 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
     - **Formula**: `=MAXIFS($C$2:$C$3170, $A$2:$A$3170, A2) - MINIFS($C$2:$C$3170, $A$2:$A$3170, A2)`
     - This formula calculates the difference between the maximum and minimum temperatures recorded for each plant.
 
+7. **Average Humidity**:
+    - **Column Added**: `Avg Humidity`
+    - **Formula**: `=AVERAGEIFS($I$2:$I$3170, $A$2:$A$3170, A2)`
+    - This formula calculates the average humidity for each plant over the growth period.
 
 
 
