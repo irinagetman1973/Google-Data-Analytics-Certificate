@@ -92,8 +92,15 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
 
 ### Statistical Analysis
 
-- Correlation analysis was conducted to identify relationships between variables.
-- Hypothesis testing was performed to validate assumptions about the data.
+1. **Summary Statistics**:
+   - Calculated mean, median, and standard deviation for key features like temperature, humidity, pH level, and TDS value.
+
+2. **Correlation Analysis**:
+   - Determined the correlations between different features to understand their relationships.
+   - **Correlation between Temperature and Growth Days**: `=CORREL(C2:C3170, G2:G3170)`
+   - **Correlation between Humidity and Growth Days**: `=CORREL(D2:D3170, G2:G3170)`
+   - **Correlation between pH Level and Growth Days**: `=CORREL(F2:F3170, G2:G3170)`
+   - **Correlation between TDS Value and Growth Days**: `=CORREL(E2:E3170, G2:G3170)`
 
 ### Visualization and Reporting
 
