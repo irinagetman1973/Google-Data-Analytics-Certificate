@@ -102,7 +102,7 @@ Analyze the factors affecting lettuce growth and provide insights for optimizing
 
 
 ## Analysis Files
-- **Data Cleaning:** [lettuce_data_cleaning.xlsx](lettuce_data_cleaning.xlsx)
+- **Data Cleaning & Feature Engineering** [lettuce_data_cleaning.xlsx](lettuce_data_cleaning.xlsx)
 - **Exploratory Analysis:** [lettuce_exploratory_analysis.xlsx](lettuce_exploratory_analysis.xlsx)
 - **Visualizations:** [lettuce_visualizations.xlsx](lettuce_visualizations.xlsx)
 
